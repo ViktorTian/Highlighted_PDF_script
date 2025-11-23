@@ -39,11 +39,6 @@ latexdiff --help
     paper_rev.zip
 ```
 
-- **Open PowerShell in that folder and (for this session only) allow script
-execution:**
-
-```Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass```
-
 - **Run the script, specifying:**
 
 -OldZip – old version ZIP file
