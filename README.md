@@ -54,7 +54,7 @@ execution:**
 
 - **Example:**
 ```
-.\diff -OldZip "paper_old.zip" -NewZip "paper_rev.zip" -MainTex "neurips_2025.tex"
+.\diff.ps1 -OldZip "paper_old.zip" -NewZip "paper_rev.zip" -MainTex "neurips_2025.tex"
 ```
 
 - **After it finishes, you will get a folder:**
