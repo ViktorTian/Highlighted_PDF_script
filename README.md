@@ -1,32 +1,31 @@
-# LaTeXDiff Helper Script (Windows + Overleaf)
+# LaTeX diff helper
 
-This repository provides a small PowerShell script to generate a **marked-up LaTeX diff** between two Overleaf projects.
+This repository provides a small PowerShell script `diff` that generates a
+**marked-up LaTeX diff** between two Overleaf projects.
 
-Given:
-
-- an “old” version of the paper (ZIP exported from Overleaf), and  
-- a “revised” version (another ZIP),
-
-the script will:
-
-1. Unzip both projects.
-2. Locate the main LaTeX file in each project.
-3. Run `latexdiff --flatten` on them.
-4. Produce `diff_output/diff.tex`, which can be compiled into a PDF with insertions and deletions highlighted.
-
-This is useful when journals or conferences ask for a “tracked changes” or “marked-up” version of a LaTeX manuscript.
+Given two `.zip` exports of your paper (old version and revised version), the
+script creates a `diff.tex` file that highlights all changes. You can upload
+`diff.tex` back to Overleaf and compile it to get a PDF with insertions and
+deletions clearly marked.
 
 ---
 
-## Requirements
+## Prerequisites
 
-- Windows
-- A TeX distribution that includes `latexdiff`, for example:
+- **Windows**
+- **PowerShell**
+- A LaTeX distribution with `latexdiff`, e.g.
   - [MiKTeX](https://miktex.org/)
   - [TeX Live](https://tug.org/texlive/)
-- PowerShell (comes with modern Windows by default)
+- Two Overleaf source ZIPs:
+  - one for the **old** version of the project
+  - one for the **revised** version
+- You know the name of the main `.tex` file (e.g. `main.tex`,
+  `neurips_2025.tex`, etc.)
 
-After installing MiKTeX or TeX Live, verify that `latexdiff` is available:
+You can check that `latexdiff` is available by running:
 
 ```powershell
 latexdiff --help
+
+## Usage
