@@ -45,6 +45,7 @@ execution:**
 ```Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass```
 
 - **Run the script, specifying:**
+
 -OldZip – old version ZIP file
 
 -NewZip – revised version ZIP file
