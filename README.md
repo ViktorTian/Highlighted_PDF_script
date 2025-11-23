@@ -28,4 +28,22 @@ You can check that `latexdiff` is available by running:
 ```powershell
 latexdiff --help
 
+---
+
 ## Usage
+- **Export both versions from Overleaf as ZIP files**
+- **Place the script diff and the two ZIP files in the same folder**
+C:\Users\you\Desktop\latex-diff\
+    diff
+    paper_old.zip
+    paper_rev.zip
+
+- **Open PowerShell in that folder and (for this session only) allow script
+execution:**
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+
+
+
+
