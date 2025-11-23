@@ -20,8 +20,7 @@ deletions clearly marked.
 - Two Overleaf source ZIPs:
   - one for the **old** version of the project
   - one for the **revised** version
-- You know the name of the main `.tex` file (e.g. `main.tex`,
-  `neurips_2025.tex`, etc.)
+- You know the name of the main `.tex` file (e.g. `main.tex`, etc.)
 
 You can check that `latexdiff` is available by running:
 
